@@ -80,7 +80,7 @@ public class calculatorWithGUI extends JFrame {
 	         }else if("←".equals(command)) {
 	        	 String currentInput = display.getText();
 	        	 if(currentInput.length() > 0) {
-	        		 display.setText(currentInput.substring(0, currentInput.length() - 1));
+	        	    display.setText(currentInput.substring(0, currentInput.length() - 1));
 	        	 }
 	         }
 	     }
@@ -100,9 +100,9 @@ public class calculatorWithGUI extends JFrame {
 			break;
 		case "/":
 			if(num2 != 0) {
-				result = num1 / num2;
+			   result = num1 / num2;
 			}else {
-				return Double.NaN;
+			    return Double.NaN;
 			}
 			break;
 		default:
